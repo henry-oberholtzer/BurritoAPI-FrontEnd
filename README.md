@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# BurritoAPI Front End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application to interact with []()
 
-Currently, two official plugins are available:
+By Henry Oberholtzer & Kim Robinson
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- Vite.js
+- React
+- TypeScript
+- 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- user can access API with GET (all), GET (by id), POST, DELETE (by id), PUT and PATCH (by id)
+- user can read and create, but can only edit/delete objects if they are the listed editor
+- GET all includes query parameters, some are keyword enabled (not exact match)
+- Pagination included in GET (all) request
+- JWT Token added for authentication (user can register and sign in for token, use Bearer token to call API)
+- Version 1 & 2 set up.
 
-- Configure the top-level `parserOptions` property like this:
+## Upcoming Changes
+* Object within object?
+* API key
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Setup/Installation Requirements
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Coming soon
+
+## Known Bugs
+
+- None at this time
+
+# API Documentation
+
+Full CRUD support is provided. Please see the [the documentation]()
+<!-- README thoroughly describes the further exploration topic that's been implemented in the API. -->
+
+## License
+
+(c) 2024 [Henry Oberholtzer](https://www.henryoberholtzer.com/) & [Kim Robinson](https://www.github.com/kimmykokonut)
+
+Original code licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html#license), other code bases and libraries as stated.
