@@ -1,13 +1,13 @@
 interface BurritoObject {
-  burritoId: int;
-  name: string;
-  price: int;
-  location: string;
-  protein: string;
-  review: string;
-  imageUrl: string;
-  user: string;
-  rating: int;
+  BurritoId: int;
+  Name: string;
+  Price: int;
+  Location: string;
+  Protein: string;
+  Review: string;
+  ImageUrl: string;
+  User: string;
+  Rating: int;
 }
 
 interface Action {

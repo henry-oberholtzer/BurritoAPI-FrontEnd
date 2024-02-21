@@ -1,27 +1,24 @@
-import { useState, useReducer } from 'react';
 import Burrito from './Burrito';
 import { useLoaderData } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const TodosBurritos = () => {
-	const burritoList = useLoaderData() as burritoArray;
-	//useeffect is in api call file...
+	const burritoList = useLoaderData() as BurritoObject[];
+	const nav = useNavigate();
 
 		return (
 			<>
-
-				<h1>todos los burritos results</h1>
+				<h1>todos los resultados de los burritos</h1>
 				<div className="results">
-					{burritoList.map((burrito, index: number) => (
+					{burritoList.map((burrito) => (
 						<Burrito
-							key={index}
-							Name={burrito.Name}
-							Location={burrito.Location}
+							{...burrito}
+
 							// <img src="{burrito.ImageUrl" />
-							index={index}
 						/>
 					))}
 				</div>
+				<button onClick={() => nav(`/`)}>go home</button>
 			</>
 		);
 	}
